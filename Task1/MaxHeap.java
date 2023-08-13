@@ -1,3 +1,5 @@
+package Task1;
+
 import java.util.ArrayList;
 
 public class MaxHeap {
@@ -13,7 +15,7 @@ public class MaxHeap {
     }
 
     public Integer pop() {
-        if (heapList.isEmpty()) throw new RuntimeException("Main is empty");
+        if (heapList.isEmpty()) throw new RuntimeException("Task1.Main is empty");
         Integer max = heapList.get(0);
         heapList.set(0, heapList.get(heapList.size() - 1));
         heapList.set(heapList.size() - 1, max);
